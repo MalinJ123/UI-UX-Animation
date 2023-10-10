@@ -1,0 +1,139 @@
+.transition-btn {
+  /* border: 2px solid rgb(0, 0, 0);  */
+  background-color: green;
+  color: white;
+  padding: 1em;
+  border-radius: 5%;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.transition-btn:hover {
+  background-color: rgb(98, 237, 98);
+  transform: scale(3.1);
+  /* width: 15em;
+      height:20em;  */
+  color: black;
+  border: white;
+}
+
+.color {
+  padding: 2em;
+  background-color: rgb(50, 183, 17);
+}
+.color:hover {
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: rgb(150, 231, 170);
+  }
+  25% {
+    background-color: rgb(102, 211, 86);
+  }
+  50% {
+    background-color: rgb(28, 179, 48);
+  }
+  75% {
+    background-color: rgb(47, 137, 56);
+  }
+  100% {
+    background-color: rgb(32, 114, 15);
+  }
+}
+
+.color3 {
+  padding: 2em;
+  background-color: rgb(184, 179, 179);
+}
+
+.color3:hover {
+  animation-name: moveAndChangeColor;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  transform: translateX(500px);
+}
+
+@keyframes moveAndChangeColor {
+  0% {
+    background-color: rgb(150, 231, 170);
+    transform: translateX(0%);
+  }
+  20% {
+    background-color: rgb(102, 211, 86);
+    transform: translateX(20%);
+  }
+  40% {
+    background-color: rgb(28, 179, 48);
+    transform: translateX(40%);
+  }
+  60% {
+    background-color: rgb(47, 137, 56);
+    transform: translateX(60%);
+  }
+  80% {
+    background-color: rgb(32, 114, 15);
+    transform: translateX(80%);
+  }
+  100% {
+    background-color: rgb(150, 231, 170);
+    transform: translateX(100%);
+  }
+}
+.color4 {
+ padding: 3em;
+  background-color: rgb(129, 175, 131);
+  position: relative;
+  clip-path: circle();
+}
+
+.color4:hover {
+  animation: color4 4s ease-in-out infinite;
+}
+
+@keyframes color4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(200px, 0) rotate(90deg) scale(1.5);
+  }
+  50% {
+    transform: translate(200px, 0) rotate(180deg) scale(1);
+  }
+  75% {
+    transform: translate(0, 0) rotate(270deg) scale(0.5);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+  }
+}
+
+.timing > * {
+  width: 3em;
+  height: 3em;
+  background-color: #52c234;
+  border: 1px solid darkgreen;
+  margin: 0.1em;
+  position: relative;
+  left: 90%;
+  transition: all 1.5s linear;
+}
+
+.timing:hover > * {
+  left: calc(-0.01em);
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.border {
+  border: 2px dotted black;
+  padding: 0.2em;
+  margin-left: 1em;
+}
+.green {
+  padding: 1em;
+  background-color: #52c234;
+  transition: transform 0.5s linear;
+  border-radius: 10%;
+}
+
+.border .green:hover   {
+  transform: translateX(70px);
+}
+
+.container {
+  display: flex;
+  border: 2px solid rgb(198, 194, 196);
+  margin-bottom: 0.4em;
+  padding: 0.5em;
+}
+
+.exercise {
+  padding: 0.3em;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: rgb(213, 205, 205);
+  margin: 0.1em;
+  font-weight: bold;
+}
+
+.text:hover {
+  background-color: rgb(99, 102, 102);
+  color: rgb(232, 226, 226);
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #52c234 0%,
+    #061700 51%,
+    #52c234 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  transform: translateX(70px);
+}
+
+.shadow {
+  border: 2px solid gray;
+  margin-left: 1em;
+  height: 8em;
+  width: 10em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shadow:hover {
+  box-shadow: 2em 0.7em 0.2em 0.1em rgb(159, 155, 155);
+  transform: translate(-30px, -10px);
+  position: relative;
+}
+.second {
+  border: 2px solid gray;
+  margin-left: 1em;
+  height: 8em;
+  width: 10em;
+  transition: transform 0.5s, box-shadow 0.4s;
+}
+.second:hover {
+  box-shadow: 0em 3em 0.2em 0em rgb(159, 155, 155);
+  transform: translateY(-50px);
+  position: relative;
+}
+.border-box {
+  display: flex;
+}
+.scale {
+  width: 3em;
+  height: 3em;
+  border: 2px solid gray;
+  margin-left: 1em;
+  transition: width 0.5s, height 0.5s;
+}
+
+.scale:hover {
+  /* transform:scale(2.3);  */
+  /* med scale så hoppar animeringen, med width så växer den ut */
+  width: 80px;
+  height: 80px;
+}
+.rotate {
+  width: 3em;
+  height: 3em;
+  position: relative;
+  justify-content: end;
+  transition: width 2s, height 2s, transform 2s;
+}
+.rotate:hover {
+  /* scale: 3; */
+  width: 150px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+
+

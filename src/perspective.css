@@ -1,0 +1,29 @@
+.frame {
+      border: 2px solid black;
+    }
+    
+    .parent {
+      display: flex;
+      perspective: 500px;
+    }
+    
+    .parent:hover .tent1 {
+      transform: rotateY(-106deg) rotateX(39deg);
+      background-color: rgb(129, 66, 98);
+    }
+    
+    .parent:hover .tent2 {
+      transform: rotateY(45deg) rotateX(20deg);
+      background-color: hotpink;
+    }
+    
+    .tent1,
+    .tent2 {
+      width: 8em;
+      height: 15em;
+      border: 2px solid black;
+      position: relative;
+      transition: transform 2.5s linear;
+    }
+ 
+    
